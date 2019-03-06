@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>vue.js起步</title>
+		<!-- 开发环境版本，包含了有帮助的命令行警告 -->
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	</head>
+	<body>
+		<!-- vueapp的根隆起 -->
+		<div id="app">
+			<p>姓名:{{name}}</p>
+			<input type="text" v-bind:value="description"  />
+			<a v-bind:href="url">{{website}}</a>
+			<img :src="avatar" >
+			</div>
+			
+			<script type="text/javascript">
+				// 实例化一个vue对象
+				var app = new Vue({
+					el: '#app',
+					data:{
+						name:'忧郁西'',
+						description:'vue.js的创力着'',
+						website:'vue.js官网',
+						url:'http://cn.vuejs.org/',
+						avatar:https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=c08a0c60a844ad342ebf8081e8996bc9/4afbfbedab64034f29596c8ba6c379310b551da2.jpg
+						
+						
+					}
+				})
+			</script>
+
+		
+	</body>
+</html>
